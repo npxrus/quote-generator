@@ -14,8 +14,84 @@ body {
   min-height: 100vh;
 
   font-family: "Raleway", sans-serif;
+  font-weight: 700;
   color: #000000;
   text-align: center;
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.25' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.container {
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+
+  border-radius: 10px;
+  background-color: #fafafa;
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+  font-size: 2.75rem;
+}
+
+.quote-text-long {
+  font-size: 2rem;
+}
+
+.fa-quote-left {
+  font-size: 4rem;
+}
+
+.quote-author {
+  margin-top: 15px;
+
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn {
+  height: 2.5rem;
+
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #38a1f3;
+
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+
+  transition: all 0.2s ease-out;
+}
+
+.fa-twitter {
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  filter: brightness(150%);
+}
+
+.btn:active {
+  transform: translateY(0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    margin: auto 10px;
+  }
+
+  .quote-text {
+    font-size: 2.5rem;
+  }
 }
